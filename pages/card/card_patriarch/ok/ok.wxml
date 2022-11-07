@@ -1,0 +1,5 @@
+<!--pages/ok/ok.wxml-->
+<view class="text1">
+  <text>健康信息提交完毕！</text>
+  <image class="item-image" src="/images/ok.png"></image>
+</view>
