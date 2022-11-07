@@ -1,0 +1,7 @@
+<!--pages/ok/ok.wxml-->
+<text>申请成功，请等待老师审批</text>
+<view class="a"><image src="../../imgs/√.png"></image></view>
+<view class="b">
+<button id="return" bindtap="return" style="width:30vw">
+返回</button>
+</view>
