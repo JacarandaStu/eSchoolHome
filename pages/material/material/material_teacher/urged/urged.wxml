@@ -1,0 +1,14 @@
+<view class="navbar">
+  <view class="navitem" data-name="lazy">未提交名单</view>
+</view>
+<view class="submit-list">
+    <block wx:for="{{submit_list}}" wx:for-item="item" wx:key="key">
+      <view class="member_css" id="{{item.id}}">
+        <text>{{item.No}} {{item.Name}}</text>
+        <view class="show-statu">
+          <text style="color: {{item.Color}}">{{item.Statu}}</text>
+        </view>
+      </view>
+    </block>
+</view>
+<button class="remind">一键提醒</button>
