@@ -1,0 +1,58 @@
+/* pages/weiDaKa/weiDaKa.wxss */
+.head{
+  display: flex;
+  width: 390px;
+  height: 48px;
+  line-height: 48px;
+  background-color: rgba(187, 187, 187, 0.356);
+}
+.label1{
+  width: 33%;
+  border-bottom: 3px solid rgb(32, 201, 111);
+  background-color: rgb(200, 243, 220);
+}
+.label2, .label3{
+  width: 33%;
+}
+.remind{
+  position:absolute;
+  left:0;
+  right:0;
+  margin: 50% auto;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(206, 12, 12);
+  display: block;  /* block   none*/
+}
+.clock{
+  /* position:absolute; */
+  /* margin-left: 292px; */
+  float: right;
+  width: 80px;
+  height: 82px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(16, 16, 16, 1);
+  font-size: 14px;
+   font-weight: bold; /* 加粗 */
+  text-align: center;
+  font-family: Arial;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+.item-image{
+  margin: 5px 20px;
+  width: 45px;
+  height: 45px;
+}
+
+.message{
+  width: 390px;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(16, 16, 16, 1);
+  font-size: 16px;
+  /* text-align: left; */
+  font-family: Arial;
+  border: 1px solid rgba(187, 187, 187, 1);
+}

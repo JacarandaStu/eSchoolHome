@@ -1,0 +1,13 @@
+<view>
+  <text class="page_text">已发布历史任务:</text>
+</view>
+<!-- 自动堆积 -->
+<view class="whole-task">
+    <block wx:for="{{record}}" wx:for-item="item" wx:key="key">
+      <view class="area_css" bindtap='go' id="{{item.id}}">
+        <view><text class='begin-time'>{{item.timestamp}}</text></view>
+        <view><text class='task-title'>{{item.title}}</text></view>
+        <view><text class='end-time'>{{item.ddl}}</text></view>
+      </view>
+    </block>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/successSubmit/successSubmit.wxml-->
+<view class="text1">
+  <image class="item-image" src="/images/ok.png"></image>
+  <view>您已成功提交 谢谢您的配合</view>
+</view>
