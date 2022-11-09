@@ -1,6 +1,0 @@
-<!--pages/successSubmit/successSubmit.wxml-->
-<view class="text1">
-  <image class="item-image" src="/images/OK.jpg"></image>
-  <view>您已进入家长端</view>
-  <view>请点击进入主页</view>
-</view>

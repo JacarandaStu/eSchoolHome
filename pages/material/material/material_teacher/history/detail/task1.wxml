@@ -1,8 +1,0 @@
-<view class="finish" bindtap="go1">
-  <text class="num">{{finish_num}} 人</text>
-  <text class="tip">已提交</text>
-</view>
-<view class="unfinish" bindtap="go2">
-  <text class="num">{{unfinish_num}} 人</text>
-  <text class="tip">未提交</text>
-</view>

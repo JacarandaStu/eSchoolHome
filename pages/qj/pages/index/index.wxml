@@ -1,7 +1,0 @@
-<button wx:if="{{!userInfo}}"   bindtap="dianji" >点击</button>
-<view wx:else class="root">
-     <image class="touxian"  src="{{userInfo.avatarUrl}}"></image>
-     <text>{{userInfo.nickName}}</text>
-     <button bindtap="tui">退出登录</button>
-     <button bindtap="ok">实验</button>
-</view>
