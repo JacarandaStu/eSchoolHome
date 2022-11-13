@@ -21,8 +21,20 @@
   <!--校园风采-->
   <view class="hot">
     <view style="height:20px;width:5px;background-color:skyblue"></view>
-    <text style="margin-left:10rpx;font-size:15px">校园风采</text>
+    <text style="margin-left:10rpx;font-size:18px">校园风采</text>
   </view>
 
-  
+  <view class="container">
+      <view class="swiper_container">
+      <swiper class="swiper" indicator-dots="true" autoplay="true"
+    circular="true" interval="2000" duration="2000" indicator-color="#fffff0" indicator-active-color="#0000FF">
+        <block wx:for="{{images}}" wx:key="id">
+          <swiper-item>
+          <image class="image_banner" src="../../images/{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      </view>
+    </view>
+
 </view>

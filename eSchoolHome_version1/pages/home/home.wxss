@@ -34,7 +34,7 @@ page{
   color: rgba(17, 16, 16, 0.808);
 }
 .hot{
-  margin-top: 35px;
+  margin-top: 0px;
   display: flex;
   flex-direction: row;
   font-size: 18px;
@@ -66,4 +66,22 @@ page{
 .hottext{
   display:table-cell;
   vertical-align: middle;
+}
+.swiper_container{
+  position: fixed;
+  top: 45%;
+  height: 100%;
+  width: 100%;
+  margin-right: 5px;
+}
+.swiper{
+  position: absolute;
+  height: 50%;
+  width: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  top: 20px;
 }

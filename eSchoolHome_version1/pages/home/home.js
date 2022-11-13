@@ -26,9 +26,19 @@ Page({
         img: "/images/材料.svg",
         text: "文件收集"
       },
-    ]
+      {
+        id: 4,
+        name: "material",
+        img: "/images/请假.svg",
+        text: "班费管理"
+      },
+    ],
+    indicatorDots:true,
+    circular:true,
+    autoplay:true,
+    images:['xiaoyuan1.jpg','xiaoyuan2.jpg','xiaoyuan3.jpg','xiaoyuan4.jpg','xiaoyuan5.jpg']
   },
-
+  
   onLoad: function (options) {
     var that = this;
     app.getOpenid();
@@ -75,7 +85,7 @@ Page({
     } else if (index == 2) {
       if(app.globalData.userType == "teacher"){
         wx.navigateTo({
-          url: '../teacher/card_teacher/weiDaKa/weiDaKa',
+          url: '../teacher/card_teacher/abnormalMessage/abnormalMessage',
         })
       } else {
         wx.navigateTo({
