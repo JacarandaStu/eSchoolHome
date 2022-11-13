@@ -60,7 +60,7 @@
     <view class="me-info-list">
       <view class="xibie">
         <view class="xibie-view">
-        <image src="../../../../images/home1.png" class="me-info-icon"></image></view>
+        <image src="../../../../images/xibie.png" class="me-info-icon"></image></view>
         <view>学生姓名：</view>
       </view>
       <input type="text" class="input" placeholder="请输入学生姓名"/>
@@ -68,7 +68,7 @@
     <!--手机号  -->
     <view class="me-info-list">
       <view class="xibie">
-        <view class="xibie-view"><image src="../../../../images/name.png" class="me-info-icon"></image></view>
+        <view class="xibie-view"><image src="../../../../images/banji.png" class="me-info-icon"></image></view>
         <view>联系电话：</view>
       </view>
       <input type="text" class="input" placeholder="请输入您的联系电话"/> 
