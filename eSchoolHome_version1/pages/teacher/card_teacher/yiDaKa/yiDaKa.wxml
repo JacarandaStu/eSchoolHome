@@ -21,23 +21,22 @@
 
 <form action="">
   <view class="message">
-    <text class="num">1</text>
-    <text class="name">某某同学</text>
-    <text class="id">102002103</text>
-    <text class="time">06:00</text>
-
+    <view class="id">1</view>
+    <view class="name">某某</view>
+    <view class="s_id">102002103</view>
+    <view class="time">06:00</view>
   </view>
   <view class="message">
-    <text class="num">2</text>
-    <text class="name">某某同学</text>
-    <text class="id">102002103</text>
-    <text class="time">07:00</text>
+    <view class="id">2</view>
+    <view class="name">某某某</view>
+    <view class="s_id">102002103</view>
+    <view class="time">06:00</view>
   </view>
   <view class="message">
-    <text class="num">3</text>
-    <text class="name">某某某同学</text>
-    <text class="id">102002103</text>
-    <text class="time">08:00</text>
+    <view class="id">3</view>
+    <view class="name">某某</view>
+    <view class="s_id">102002103</view>
+    <view class="time">06:00</view>
   </view>
 </form>
 

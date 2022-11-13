@@ -24,13 +24,11 @@
 .name{ 
   margin-left: 30px;
 } 
-.abnormal{
-  margin-left: 40px;
-  color: rgb(255, 0, 0);
-}
+
 
 
 .message{
+  display: flex;
   width: 390px;
   height: 40px;
   line-height: 40px;
@@ -39,4 +37,20 @@
   font-size: 16px;
   font-family: Arial;
   border: 1px solid rgba(187, 187, 187, 1);
+}
+.id{
+  width: 10px;
+  margin-left: 15px;
+}
+.name{
+  width: 50px;
+  margin-left: 30px;
+} 
+.s_id{
+  margin-left: 40px;
+} 
+.abnormal{
+  position: absolute;
+  right: 0;
+  color: rgb(255, 0, 0);
 }

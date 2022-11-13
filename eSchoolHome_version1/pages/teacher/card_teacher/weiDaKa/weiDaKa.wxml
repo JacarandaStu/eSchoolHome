@@ -16,30 +16,32 @@
 <!-- <view wx:for="{{array1}}" class="message">
   {{index}},{{item}}
 </view> -->
-<view class="clock">
-  <text>一键提醒</text>
-  <image class="item-image" src="/images/clock.png"></image>
-</view>
+
 <view class="remind">
   <text>已全部提醒！</text>
-</view>
+  </view>
 <!-- 信息 -->
-<view>
+<view class="clock_message">
+  <button class="clock">
+  <text>一键提醒</text>
+  <image class="item-image" src="/images/clock.png"></image>
+</button>
   <form action="">
     <view class="message">
-      <text style="margin-left: 10px">1</text>
-      <text style="margin-left: 30px">102002103</text>
-      <text style="margin-left: 30px">某某同学</text>
+      <view class="id">1</view>
+      <view class="name">某某</view>
+      <view class="s_id">102002103</view>
     </view>
     <view class="message">
-      <text style="margin-left: 10px">2</text>
-      <text style="margin-left: 30px">102002103</text>
-      <text style="margin-left: 30px">某某同学</text>
+      <view class="id">2</view>
+      <view class="name">某某某</view>
+      <view class="s_id">102002103</view>
     </view>
     <view class="message">
-      <text style="margin-left: 10px">3</text>
-      <text style="margin-left: 30px">102002103</text>
-      <text style="margin-left: 30px">某某某同学</text>
+      <view class="id">3</view>
+      <view class="name">某某某</view>
+      <view class="s_id">102002103</view>
     </view>
+
   </form>
 </view>

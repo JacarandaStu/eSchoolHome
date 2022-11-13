@@ -12,14 +12,14 @@
 <view class="health">
   <text class="title2">2.今日身体健康状况</text>
   <view class="radio1">
-    <radio-group class="radio-group" bindchange="radioChange">
-        <radio disabled="false" checked="false"><text>无异常状况</text></radio>
-        <radio disabled="false">有发热症状</radio>
-        <radio disabled="fales">咳嗽</radio>
-        <radio disabled="false">乏力</radio>
-        <radio disabled="falses">其他</radio>
+    <checkbox-group class="radio-group" bindchange="radioChange">
+        <checkbox disabled="false" checked="true"><text>无异常状况</text></checkbox>
+        <checkbox disabled="false">有发热症状</checkbox>
+        <checkbox disabled="fales">咳嗽</checkbox>
+        <checkbox disabled="false">乏力</checkbox>
+        <checkbox disabled="falses">其他</checkbox>
         <textarea name="" id="" cols="30" rows="10" class="input_rest"></textarea>
-    </radio-group>
+    </checkbox-group>
   </view>
 </view>
 <!-- 3.近7日是否去过中高风险地区 -->
