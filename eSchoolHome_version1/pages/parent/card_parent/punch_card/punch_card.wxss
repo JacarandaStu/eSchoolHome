@@ -33,21 +33,22 @@
   font-family: Arial;
   border: 1px solid rgba(187, 187, 187, 1);
 }
-
-radio {
+/* readio 与checkbox框的大小 */
+radio,checkbox {
   transform:scale(0.7);
 }
 .radio-group{
   display: flex;
   flex-direction: column;
 }
+
 .radio1{
   margin: 10px 62px;
   width: 188px;
   height: 126px;
 }
 .input_rest{
-  margin: -30px 80px;
+  margin: -25px 80px;
   width: 200px;
   height: 30px;
   font-size: 16px;
