@@ -1,5 +1,5 @@
 .navbar{
-  margin-top: 5px;
+  position: fixed;
   display: flex;
   flex-direction: row;
   width: 390px;
@@ -12,9 +12,18 @@ button{
   height: 50px;
   width: 130px;
 }
-.record_css{
-  margin-top: 4px;
+.submit-list
+{
+  margin-top: 50px;
+  height: 650px;
+  position: absolute;
+  overflow: scroll;
+}
+.member_css{
+  margin-top: 10px;
+  margin-left: 10px;
   display: flex;
+  width: 380px;
 }
 .show-statu{
   position: absolute;

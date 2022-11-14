@@ -1,26 +1,44 @@
-// pages/material/material_teacher/history/detail/task1.js
+var app = getApp();
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-      finish_num: 40,
-      unfinish_num: 20,
+      finish: [],
+      unfinish: [],
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+      wx.request({
+        url: 'http://127.0.0.1:5000/taskIndex?taskID='+app.globalData.task_id,
+        method: 'GET',
+        timeout: 0,
+        success: (result) => {
+          console.log(result.data);
+          var that = this;
+          that.setData({
+            finish:result.data.fin,
+            unfinish:result.data.unfin
+          });
+        },
+        fail: (res) => {
+          console.log("error");
+        },
+        complete: (res) => {},
+      })
     },
     go1:function() {
+      app.globalData.task_submit = this.data.finish;
       wx.navigateTo({
         url: '../../check/check',
       })
     },
     go2:function() {
+      app.globalData.task_urge = this.data.unfinish;
       wx.navigateTo({
         url: '../../urged/urged',
       })

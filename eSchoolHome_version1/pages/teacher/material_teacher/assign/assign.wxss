@@ -32,12 +32,14 @@ input{
   list-style: none;
 }
 textarea{
-width: 348px;
-height: 105px;
-border: solid 1px gray;
+  height: 105px;
+  border: solid 1px gray;
 }
 .write-text{
+  display: flex;
+  align-items: center;
   border-radius: 10rpx;
+  padding: 0 10rpx;
   height: 125px;
 }
 .file-type{
@@ -54,16 +56,19 @@ border: solid 1px gray;
 }
 .list-msg3 {
   height: 60rpx;
-  width: 336px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content:center;
   border: 1px solid #ccc;
   padding: 0 10rpx;
 }
+.settime {
+  width: 100px;
+  line-height: 60rpx;
+  height: 60rpx;
+  text-align: center;
+}
 .list-msg4 {
   height: 60rpx;
-  width: 336px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,16 +78,6 @@ border: solid 1px gray;
 .select_box{
   position: absolute;
   top: 300px;
-  background-color: #fff;
-  padding: 0 10rpx;
-  width: 93%;
-  z-index: 2;
-  overflow: hidden;
-  animation: myfirst 0.01s;
-}
-.select_box2{
-  position: absolute;
-  top: 375px;
   background-color: #fff;
   padding: 0 10rpx;
   width: 93%;
@@ -112,7 +107,7 @@ border: solid 1px gray;
 .select_one {
   margin-top: 2px;
   border-bottom: solid 1px rgb(121, 113, 113);
-  background-color: rgb(112, 106, 106);
+  background-color: rgb(211, 197, 197);
   width: 340px;
   height: 60rpx;
   line-height: 60rpx;

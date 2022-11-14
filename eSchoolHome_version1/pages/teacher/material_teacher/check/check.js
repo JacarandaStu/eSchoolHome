@@ -1,52 +1,46 @@
-// pages/material/material_teacher/check/check.js
+var app = getApp();
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-      submit_list:[{
-        No:"1",
-        Name:"小红",
-        Statu:"审批通过",
-        Time:"202210201300",
-        Color:"green"
-      },
-      {
-        No:"2",
-        Name:"小明",
-        Statu:"待审批",
-        Time:"202210201300",
-        Color:"gray"
-      },
-      {
-        No:"3",
-        Name:"小兰",
-        Statu:"待审批",
-        Time:"202210201300",
-        Color:"gray"
-      },
-      {
-        No:"4",
-        Name:"小绿",
-        Statu:"未通过",
-        Time:"202210201300",
-        Color:"red"
-      }]
+      submit_list:[],
+      mode:0,
     },
-
+    select(e) {
+      let nav_name = e.currentTarget.dataset.name;
+      let mode = nav_name == "all"? 0:nav_name == "accept"? 1:2;
+      let that = this;
+      that.setData({
+        mode: mode
+      });
+    },
+    Info(e) {
+      console.log(e.currentTarget.dataset.id);
+      app.globalData.commit_id = e.currentTarget.dataset.id;
+      if (e.currentTarget.dataset.statu == "待审核") {
+        app.globalData.task_changeable = 1;
+        wx.navigateTo({
+          url: './Info',
+        })
+      }
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+      var that = this;
+      that.setData({
+        submit_list:app.globalData.task_submit,
+      })
     },
 
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady() {
-
+      
     },
 
     /**

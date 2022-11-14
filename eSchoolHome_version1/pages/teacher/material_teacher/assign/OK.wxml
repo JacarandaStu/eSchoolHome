@@ -1,0 +1,4 @@
+<view class="text1">
+  <image class="item-image" src="/images/OK.jpg"></image>
+  <view>发布成功</view>
+</view>

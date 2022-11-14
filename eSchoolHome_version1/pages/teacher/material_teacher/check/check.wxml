@@ -1,15 +1,20 @@
 <view class="navbar">
-  <button class="navitem" data-name="accept">已提交</button>
-  <button class="navitem" data-name="wait">审批通过</button>
-  <button class="navitem" data-name="refuse">审批中</button>
+  <button class="navitem" style="background-color:{{mode == 0?'cyan':'white'}}" 
+  data-name="all" bindtap="select">已提交</button>
+  <button class="navitem" style="background-color:{{mode == 1?'cyan':'white'}}"
+   data-name="accept" bindtap="select">审批通过</button>
+  <button class="navitem" style="background-color:{{mode == 2?'cyan':'white'}}"
+   data-name="wait" bindtap="select">审批中</button>
 </view>
 <!-- 自动堆积 -->
-<view class="whole-task">
-  <block wx:for="{{submit_list}}" wx:for-item="item" wx:key="key">
-      <view class="area_css" bindtap='go' id="{{item.id}}">
-        <view><text class='begin-time'>{{item.timestamp}}</text></view>
-        <view><text class='task-title'>{{item.title}}</text></view>
-        <view><text class='end-time'>{{item.ddl}}</text></view>
+<view class="submit-list">
+    <block wx:for="{{submit_list}}" wx:for-item="item" wx:key="key">
+      <view class="member_css" data-id="{{item.userID}}" bindtap="Info" data-statu="{{item.statu}}"
+      wx:if="{{mode==0||(item.statu=='已通过'&&mode==1)||(item.statu=='待审核'&&mode==2)}}">
+        <text>{{item.userID}} {{item.name}}</text>
+        <view class="show-statu">
+          <text style="color: {{item.statu == '待审核' ? 'blue' : 'green'}}">{{item.statu}}</text>
+        </view>
       </view>
     </block>
 </view>

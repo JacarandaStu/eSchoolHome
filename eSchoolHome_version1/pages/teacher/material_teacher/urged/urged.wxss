@@ -1,5 +1,5 @@
 .navbar{
-  margin-top: 5px;
+  position: fixed;
   display: flex;
   flex-direction: row;
   width: 390px;
@@ -13,6 +13,13 @@
   width: 390px;
   text-align: center;
   line-height: 50px;
+}
+.urge-list
+{
+  margin-top: 50px;
+  height: 650px;
+  position: absolute;
+  overflow: scroll;
 }
 .member_css{
   margin-top: 10px;
@@ -29,12 +36,14 @@
   text-align: center;
 }
 .remind{
-  margin-top: 40px;
-  width: 123px;
-  height: 52px;
+  position: fixed;
+  top: 80%;
+  left: 40%;
+  width: 90px;
+  height: 40px;
   color: white;
   text-align: center;
-  line-height: 52px;
-  font-size: 18px;
+  line-height: 40px;
+  font-size: 15px;
   background-color: #93d2f3;
 }

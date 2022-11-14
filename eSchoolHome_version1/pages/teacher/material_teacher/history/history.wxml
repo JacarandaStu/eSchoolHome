@@ -4,10 +4,10 @@
 <!-- 自动堆积 -->
 <view class="whole-task">
     <block wx:for="{{record}}" wx:for-item="item" wx:key="key">
-      <view class="area_css" bindtap='go' id="{{item.id}}">
-        <view><text class='begin-time'>{{item.timestamp}}</text></view>
-        <view><text class='task-title'>{{item.title}}</text></view>
-        <view><text class='end-time'>{{item.ddl}}</text></view>
+      <view class="area_css" bindtap='go' data-id="{{item.task_id}}">
+        <view><text class='begin-time'>开始时间：{{item.timestamp}}</text></view>
+        <view><text class='task-title'>任务标题：{{item.title}}</text></view>
+        <view><text class='end-time'>截止时间：{{item.ddl}}</text></view>
       </view>
     </block>
 </view>

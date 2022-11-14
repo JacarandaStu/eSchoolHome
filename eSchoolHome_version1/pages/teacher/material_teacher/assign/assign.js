@@ -1,18 +1,34 @@
-// pages/material/material_teacher/assign/assign.js
+var app = getApp();
+var util = require("../../../../util/util");
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
-        somedata:"。。。"
+      Type:"",
+      ddlTime:"",
+      remindTime:"",
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad(options) {
-
+    onLoad:function(options) {
+      // 获取当天时间
+      var that = this;
+      var time = util.formatTime(new Date()).substring(0, 16);
+      console.log(time);
+      that.setData({
+        date_head: time.substring(0, 10),
+        date_tail: time.substring(11, 16),
+      });
+    },
+    changeDate(e) {
+      this.setData({
+        date_head: e.detail.value,
+      });
+    },
+    changeTime(e) {
+      this.setData({
+        date_tail: e.detail.value,
+      });
     },
     bindShowMsg(e) {
       var opt = e.currentTarget.dataset.id
@@ -20,16 +36,11 @@ Page({
         this.setData({
           select:!this.data.select
         })
-      } else if (opt == 2) {
-        this.setData({
-          select1:!this.data.select1
-        })
       } else {
         this.setData({
           select2:!this.data.select2
         })
       }
-      
     },
     mySelect(e) {
         var name = e.currentTarget.dataset.name
@@ -39,11 +50,6 @@ Page({
             Type: name,
             select: false
         })
-        } else if (fa == 2) {
-          this.setData({
-            ddlTime: name,
-            select1: false
-        })
         } else {
           this.setData({
             remindTime: name,
@@ -52,21 +58,43 @@ Page({
         }
     },
     // 发布任务，与后端交互
-    assign(e){
+    myAssign:function(datas){
+        var title = datas.detail.value.name;
+        var endTime = datas.detail.value.endTime1 + datas.detail.value.endTime2;
+        var content = datas.detail.value.content;
+
+        console.log(datas.detail.value);
         wx.request({
-          url: '###',
-          data: this.data,
-          enableCache: true,
-          enableHttp2: true,
-          enableQuic: true,
-          header: {},
+          url: 'http://127.0.0.1:5000/assign',
+          data: {
+            "classID":app.globalData.class_id,
+            "title":title,
+            "info":content,
+            "fileType":this.data.Type,
+            "ddl":endTime,
+            "remind":this.data.remindTime
+          },
+          header: {
+            'content-type': 'application/json'
+          },
+          dataType:"json",
           method: 'POST',
-          responseType: 'text',
           timeout: 0,
-          success: (result) => {},
-          fail: (res) => {},
+          success: (result) => {
+            console.log("Yeahhhhh!");
+            wx.navigateTo({
+              url: './OK',
+            })
+          },
+          fail: (res) => {
+            console.log("Fuckkkkk!");
+            wx.navigateTo({
+              url: './OK',
+            })
+          },
           complete: (res) => {},
         })
+        
     },
     
 

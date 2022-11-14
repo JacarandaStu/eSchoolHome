@@ -1,0 +1,36 @@
+<view class="main">
+  <form bindsubmit="formSubmit">
+    <view class='bg'>
+      <view class='item'>
+        学生姓名：{{name}}
+      </view>
+      <view class='item'>
+        学生座号：{{no}}
+      </view>
+      <view class='item'>
+        开始时间：
+          <picker mode="date" value="{{date}}" bindchange="changeDate" name="startTime" bindchange="changeDate">
+            {{commitTime}}
+          </picker>
+      </view>
+      <view class='item'>
+        文件类型：{{fileType}}
+      </view>
+      <view class='item'>
+        文件预览：
+        <view></view>
+      </view>
+      <view class='item'>
+        审批意见：
+        <view class='bk'>
+          <input name="leaveReason" placeholder="请输入审批意见" maxlength='500' auto-height/>
+        </view>
+      </view>
+    </view>
+    <view class="judge">
+      <button class='pass' bindtap="yes" style="width:30vw">通过</button>
+      <button class='refuse' bindtap="no" style="width:30vw">退回</button>
+    </view>
+  </form>
+</view>
+

@@ -1,47 +1,31 @@
-// pages/material/material_teacher/urged/urged.js
+var app = getApp();
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        submit_list:[{
-          No:"5",
-          Name:"小杨",
-          Statu:"未提交",
-          Time:"null",
-          Color:"orange"
-        },
-        {
-          No:"6",
-          Name:"小李",
-          Statu:"未提交",
-          Time:"null",
-          Color:"orange"
-        },
-        {
-          No:"7",
-          Name:"小丽",
-          Statu:"未提交",
-          Time:"null",
-          Color:"orange"
-        },
-        {
-          No:"8",
-          Name:"小强",
-          Statu:"未提交",
-          Time:"null",
-          Color:"orange"
-        }]
+        urge_list:[],
+        mode:0,
     },
-
+    select(e) {
+      let nav_name = e.currentTarget.dataset.name;
+      let mode = nav_name == "all"? 0:nav_name == "lazy"? 1:2;
+      let that = this;
+      that.setData({
+        mode: mode
+      });
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+      var that = this;
+      that.setData({
+        urge_list:app.globalData.task_urge,
+      })
     },
-
+    
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
