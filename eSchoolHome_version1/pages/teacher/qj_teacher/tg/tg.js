@@ -4,6 +4,7 @@ Page({
   data: {
     date: '',
     date1: '',
+    date2:'',
     selected: true,
     upload: true,
   },
@@ -16,6 +17,7 @@ Page({
     that.setData({
       date: time,
       date1: time,
+      date2:time,
     });
   },
   selected: function(e) {

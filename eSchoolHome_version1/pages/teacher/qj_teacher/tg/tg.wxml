@@ -21,7 +21,7 @@
       </view>
       <view class='item'>
         结束时间：
-          <picker mode="date" value="{{date1}}" bindchange="changeDate1" name="endTime" start="{{date}}">
+          <picker mode="date" value="{{date1}}" bindchange="changeDate1" name="endTime">
             {{date1}}
           </picker>
       </view>
@@ -35,6 +35,12 @@
         审批意见：
       </view>
       <view1 class="a">通过</view1>
+      <view class='item'>
+        审批时间：
+          <picker mode="date" value="{{date2}}" bindchange="changeDate2" name="approvetime">
+            {{date2}}
+          </picker>
+      </view>
     </view>
   </form>
 </view>

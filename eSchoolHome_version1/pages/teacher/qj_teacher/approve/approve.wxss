@@ -94,7 +94,7 @@
   background-color: #fff;
   border: 2rpx dotted #ccc;
   border-radius: 15rpx;
-  height: 100%;
+  height: 90%;
 }
 
 .item {
@@ -105,17 +105,61 @@
   align-items: center;
 }
 
-.btn {
-  background-color: #79caff;
+.a{
+  position: absolute; /* 相对relative也可以 */
+  left: 0; /* 靠左调节 */
+  margin-top: 40px;
+  background-color: green;
   color: #fff;
-  width: 120rpx;
-  font-size: 30rpx;
-  margin-top: 30rpx;
-}
-
+  width: 100rpx;
+  font-size: 40rpx;
+  margin-left: 50px;
+ }
+ .b{
+  position: absolute; /* 相对relative也可以 */
+  right: 0; /* 靠左调节 */
+  margin-top: 40px;
+  background-color:red;
+  color: #fff;
+  width: 100rpx;
+  font-size: 40rpx;
+  margin-right: 50px;
+ }
 .bk {
   border-radius: 10rpx;
   border: 2rpx solid #ccc;
   padding: 10rpx;
   width: 65%;
 }
+/*审批结果*/
+.bg1 {
+  margin: 40rpx;
+  background-color: #fff;
+  border: 2rpx dotted #ccc;
+  border-radius: 15rpx;
+  height: 30%;
+}
+.aa{
+  position: absolute; /* 相对relative也可以 */
+  right: 0; /* 靠右调节 */
+  margin-top: 40px;
+  margin-right: 30px;
+  font-size: 30px;
+  color: green;
+}
+.bb{
+  position: absolute; /* 相对relative也可以 */
+  right: 0; /* 靠右调节 */
+  margin-top: 40px;
+  margin-right: 30px;
+  font-size: 30px;
+  color: red;
+} 
+.cc{
+  position: absolute; /* 相对relative也可以 */
+  right: 0; /* 靠右调节 */
+  margin-top: 40px;
+  margin-right: 30px;
+  font-size: 30px;
+  color:yellow;
+} 

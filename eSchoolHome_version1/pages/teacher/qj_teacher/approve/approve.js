@@ -25,6 +25,23 @@ Page({
     that.setData({
       date: time,
       date1: time,
+      date2:time,
+    });
+  },
+  // 时间
+  changeDate(e) {
+    this.setData({
+      date: e.detail.value,
+    });
+  },
+  changeDate1(e) {
+    this.setData({
+      date1: e.detail.value,
+    });
+  },
+  changeDate2(e) {
+    this.setData({
+      date2: e.detail.value,
     });
   },
   selected: function(e) {

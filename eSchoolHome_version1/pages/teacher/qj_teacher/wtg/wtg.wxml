@@ -35,6 +35,12 @@
         审批意见：
       </view>
       <view1 class="a">请假理由不充分不准许请假</view1>
+      <view class='item'>
+        审批时间：
+          <picker mode="date" value="{{date2}}" bindchange="changeDate2" name="approvetime">
+            {{date2}}
+          </picker>
+      </view>
     </view>
   </form>
 </view>
