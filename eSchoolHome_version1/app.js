@@ -94,6 +94,12 @@ App({
     })
   },
   globalData: {
-    userType:"unknown"
+    userType:"unknown",
+    class_id:"504", // （区域代号+学校代号+ *未来可扩展）年级一位+两位班级号,由用户信息获取
+    task_id:"",
+    task_submit:[],
+    task_urge:[],
+    commit_id:"",
+    submit_permission:0, // 0为仅读，1为可改状态，2为可改内容
   }
 })
