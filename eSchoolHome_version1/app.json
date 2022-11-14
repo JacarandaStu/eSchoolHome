@@ -13,9 +13,12 @@
     "pages/parent/material_parent/material_parent",
     "pages/teacher/material_teacher/material_teacher",
     "pages/teacher/material_teacher/assign/assign",
+    "pages/teacher/material_teacher/assign/FAIL",
+    "pages/teacher/material_teacher/assign/OK",
     "pages/teacher/material_teacher/history/history",
     "pages/teacher/material_teacher/history/detail/task1",
     "pages/teacher/material_teacher/check/check",
+    "pages/teacher/material_teacher/check/Info",
     "pages/teacher/material_teacher/urged/urged",
 
     "pages/parent/card_parent/ok/ok",
