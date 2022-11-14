@@ -20,5 +20,11 @@ text{
   position: absolute; /* 相对relative也可以 */
   right: 0; /* 靠右调节 */
   margin-top: 60px;
-  margin-right: 0rpx
+  margin-right: 20rpx
  }
+ .btn {
+  background-color: #79caff;
+  color: #fff;
+  width: 200rpx;
+  font-size: 40rpx;
+}

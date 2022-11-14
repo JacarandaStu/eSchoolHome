@@ -1,3 +1,4 @@
+<!--pages/parent/qj_parent/record/record.wxml-->
 <view class="head">
   <view class="head_item {{selected?'head_itemActive':''}}" bindtap="selected">新请假</view>
   <view class="ring"></view>
@@ -29,7 +30,7 @@
       <view class='item'>
         结束时间：
         <view class='bk'>
-          <picker mode="date" value="{{date1}}" bindchange="changeDate1" name="endTime" start="{{date}}">
+          <picker mode="date" value="{{date1}}" bindchange="changeDate1" name="endTime">
             {{date1}}
           </picker>
         </view>
@@ -46,8 +47,74 @@
           <input name="leaveReason" placeholder="请输入请假理由" maxlength='500' auto-height/>
         </view>
       </view>
-      <button class='btn'  formType="submit">提交</button>
+      <button class='btn' bindtap="submit" >提交</button>
     </view>
   </form>
 </view>
 
+
+<view class="main {{selected1?'show':'hidden'}}">
+    <view class='bg1'>
+    <text class="aa">通过</text>
+      <view class='item'>
+        学生姓名：aa
+      </view>
+      <view class='item'>
+        开始时间：
+          <picker mode="date" value="{{date}}" bindchange="changeDate" name="startTime" bindchange="changeDate">
+            {{date}}
+          </picker>
+      </view>
+      <view class='item'>
+        结束时间：
+          <picker mode="date" value="{{date1}}" bindchange="changeDate1" name="endTime">
+            {{date1}}
+          </picker>
+      </view>
+      <view class='item'>
+        审批意见：理由充分，允许请假
+      </view>
+    </view>
+    <view class='bg1'>
+    <text class="bb">未通过</text>
+      <view class='item'>
+        学生姓名：aa
+      </view>
+      <view class='item'>
+        开始时间：
+          <picker mode="date" value="{{date}}" bindchange="changeDate" name="startTime" bindchange="changeDate">
+            {{date}}
+          </picker>
+      </view>
+      <view class='item'>
+        结束时间：
+          <picker mode="date" value="{{date1}}" bindchange="changeDate1" name="endTime">
+            {{date1}}
+          </picker>
+      </view>
+      <view class='item'>
+        审批意见：请详细写明理由，再次提交
+      </view>
+    </view>
+    <view class='bg1'>
+    <text class="cc">未审核</text>
+      <view class='item'>
+        学生姓名：aa
+      </view>
+      <view class='item'>
+        开始时间：
+          <picker mode="date" value="{{date}}" bindchange="changeDate" name="startTime" bindchange="changeDate">
+            {{date}}
+          </picker>
+      </view>
+      <view class='item'>
+        结束时间：
+          <picker mode="date" value="{{date1}}" bindchange="changeDate1" name="endTime">
+            {{date1}}
+          </picker>
+      </view>
+      <view class='item'>
+        审批意见：暂未审核
+      </view>
+    </view>
+</view>
