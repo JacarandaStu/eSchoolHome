@@ -17,15 +17,15 @@
   {{index}},{{item}}
 </view> -->
 
-<view class="remind">
+<view class="remind" hidden="{{hidden}}">
   <text>已全部提醒！</text>
   </view>
 <!-- 信息 -->
 <view class="clock_message">
-  <button class="clock">
-  <text>一键提醒</text>
-  <image class="item-image" src="/images/clock.png"></image>
-</button>
+  <button class="clock"  bindtap="remind">
+    <text>一键提醒</text>
+    <image class="item-image" src="/images/clock.png"></image>
+  </button>
   <form action="">
     <view class="message">
       <view class="id">1</view>

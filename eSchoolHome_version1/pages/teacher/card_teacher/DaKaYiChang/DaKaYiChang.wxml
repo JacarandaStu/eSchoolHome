@@ -19,7 +19,7 @@
 
 <!-- 信息 -->
 
-<form action="">
+<view bindtap="goToAbnormalMessage">
   <view class="message">
     <view class="id">1</view>
     <view class="name">某某</view>
@@ -38,4 +38,4 @@
     <view class="s_id">102002103</view>
     <view class="abnormal">发热、接触中...</view>
   </view>
-</form>
+</view>

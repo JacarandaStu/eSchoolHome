@@ -1,6 +1,6 @@
 <!--pages/abnormalMessage/abnormalMessage.wxml-->
 <view class="head">
-  <text>某某同学</text>
+  <text>某某某</text>
   <text class="id">102002103</text>
 </view>
 <!-- 1.体温自测 -->

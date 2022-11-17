@@ -5,9 +5,22 @@ Page({
      * 页面的初始数据
      */
     data: {
+      hidden:true
       // array1:[['某某同学','102002103'],'某某同学','某某同学']
 
     },
+    //点击后触发，1s后关闭
+    remind:function(e){
+        this.setData({
+          hidden:false
+        })
+      setTimeout(()=>{
+        this.setData({
+          hidden:true
+        })
+       }, 1000)
+    },
+    
     goToDaKaYiChang:function(){
       wx.redirectTo({
         url: '../DaKaYiChang/DaKaYiChang',
@@ -18,6 +31,7 @@ Page({
         url: '../yiDaKa/yiDaKa',
       })
     },
+    
 
    
 
