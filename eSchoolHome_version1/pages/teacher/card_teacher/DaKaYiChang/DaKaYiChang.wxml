@@ -19,14 +19,14 @@
 
 <!-- 信息 -->
 
-<view bindtap="goToAbnormalMessage">
+<view wx:for="{{messageList}}" bindtap="goToAbnormalMessage">
   <view class="message">
-    <view class="id">1</view>
-    <view class="name">某某</view>
-    <view class="s_id">102002103</view>
-    <view class="abnormal">发热、接触中...</view>
+    <view class="id">{{item.id}}</view>
+    <view class="name">{{item.name}}</view>
+    <view class="s_id">{{item.s_id}}</view>
+    <view class="abnormal">{{item.abnormal}}</view>
   </view>
-  <view class="message">
+  <!-- <view class="message">
     <view class="id">2</view>
     <view class="name">某某某</view>
     <view class="s_id">102002103</view>
@@ -37,5 +37,5 @@
     <view class="name">某某</view>
     <view class="s_id">102002103</view>
     <view class="abnormal">发热、接触中...</view>
-  </view>
+  </view> -->
 </view>
