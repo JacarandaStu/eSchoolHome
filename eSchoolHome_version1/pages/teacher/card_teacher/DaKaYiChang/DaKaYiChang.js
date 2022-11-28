@@ -10,6 +10,7 @@ Page({
         {id:"2",name:"李四",s_id:"102002103",abnormal:"发热、接触中..."},
         {id:"3",name:"王五",s_id:"102002103",abnormal:"发热、接触中..."},
         {id:"4",name:"某某某",s_id:"102002103",abnormal:"发热、接触中..."},
+        {id:"5",name:"某某某",s_id:"102002103",abnormal:"发热、接触中..."},
       ]
     },
     goToWeiDaKa:function(){
